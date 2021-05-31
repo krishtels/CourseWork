@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/resource"/>
+    <qresource prefix="/">
+        <file>resource/attack.png</file>
+        <file>resource/background.png</file>
+        <file>resource/fallingplatform.png</file>
+        <file>resource/ghost.png</file>
+        <file>resource/mainmenu.png</file>
+        <file>resource/menu.png</file>
+        <file>resource/menucover.png</file>
+        <file>resource/movingplatform.png</file>
+        <file>resource/multiplier.png</file>
+        <file>resource/multiplier1x.png</file>
+        <file>resource/multiplier2x.png</file>
+        <file>resource/multiplier5x.png</file>
+        <file>resource/multiplier10x.png</file>
+        <file>resource/platform.png</file>
+        <file>resource/play.png</file>
+        <file>resource/playcover.png</file>
+        <file>resource/player_left.png</file>
+        <file>resource/player_right.png</file>
+        <file>resource/player_shoot.png</file>
+        <file>resource/spring_boots.png</file>
+        <file>resource/stopplatform.png</file>
+        <file>resource/backgroundlose.png</file>
+        <file>resource/drivehorplatform.png</file>
+        <file>resource/lose.wav</file>
+        <file>resource/start.wav</file>
+    </qresource>
+</RCC>
