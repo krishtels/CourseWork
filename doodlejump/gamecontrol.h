@@ -33,7 +33,7 @@ class GameControl: public QObject
     Q_OBJECT
 public:
     GameControl();
-    GameControl(QGraphicsScene &scene, QGraphicsView &view, QObject *parent=nullptr, MainWindow *window = nullptr);
+    GameControl(QGraphicsScene &scene, QGraphicsView &view, MainWindow *window,  QObject *parent=nullptr);
     QGraphicsItemGroup *platformGroup;
     Multiplier *multiplier;
     bool bootsNotInScene=true;

@@ -38,7 +38,7 @@ GameControl::GameControl():
 
 }
 
-GameControl::GameControl(QGraphicsScene &scene, QGraphicsView &view, QObject *parent, MainWindow *window):
+GameControl::GameControl(QGraphicsScene &scene, QGraphicsView &view, MainWindow *window,  QObject *parent):
     QObject(parent),
     multiplier(new Multiplier()),
     scene(scene),
@@ -414,7 +414,7 @@ void GameControl::addScore()
 
 void GameControl::gameOverSlot()
 {
-    Sleep(500);
+    Sleep(800);
     QMediaPlayer * player = new QMediaPlayer(this);
     QMediaPlaylist * playlist = new QMediaPlaylist(player);
     player->setPlaylist(playlist);
@@ -452,11 +452,6 @@ void GameControl::gameOverSlot()
     gameOverScene->addItem(menuButton);
     menuButton->setPos(3*VIEW_WIDTH/4-BUTTON_WIDTH/2, 575);
     connect(menuButton, SIGNAL(clicked()), QApplication::activeWindow(), SLOT(showMainMenu()));
-    Button *playButton = new Button(PLAY_PATH, PLAY_COVER_PATH);
-    playButton->setZValue(4);
-    gameOverScene->addItem(playButton);
-    playButton->setPos(VIEW_WIDTH/4-BUTTON_WIDTH/2, 575);
-    connect(playButton, SIGNAL(clicked()), QApplication::activeWindow(), SLOT(newGame()));
     view.setScene(gameOverScene);
 }
 
